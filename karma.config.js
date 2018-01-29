@@ -1,4 +1,4 @@
-const tsconfig = require('./tsconfig.test.json');
+const tsconfig = require('./tsconfig.json');
 
 module.exports = function (config) {
     config.set({
@@ -25,7 +25,7 @@ module.exports = function (config) {
             coverageOptions: {
                 instrumentation: false
             },
-            tsconfig: './tsconfig.test.json'
+            tsconfig: './tsconfig.cjs.json'
         }
     })
 }

@@ -7,7 +7,7 @@
         "sourceMap": true,
         "strict": true,
         "rootDir": "src",
-        "outDir": "dist",
+        "outDir": "dist/esm",
         "lib": [ "esnext" ],
         "types": [
             "mocha"
