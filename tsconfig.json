@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "declaration": true,
+        "sourceMap": true,
+        "strict": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "lib": [ "esnext" ],
+        "types": [
+            "mocha"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "ur-bcd",
+    "version": "0.0.0",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc && rimraf dist/*.spec.js*",
+        "test": "karma start --single-run --browsers ChromeHeadless karma.config.js",
+        "watch": "karma start --auto-watch --browsers ChromeDebugging karma.config.js",
+        "clean": "rimraf dist"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "rimraf": "^2.6.2",
+        "typescript": "^2.6.2",
+        "ur-test": "0.0.1"
+    }
+}
