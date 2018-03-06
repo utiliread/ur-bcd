@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function decode(bcd) {
-    let binary = tryDecode(bcd);
+    var binary = tryDecode(bcd);
     if (binary === false) {
         throw Error;
     }
@@ -9,9 +9,9 @@ function decode(bcd) {
 }
 exports.decode = decode;
 function tryDecode(bcd) {
-    let nibbles = [];
+    var nibbles = [];
     while (bcd) {
-        let nibble = bcd & 0xf;
+        var nibble = bcd & 0xf;
         if (nibble <= 0x9) {
             nibbles.push(nibble);
         }
@@ -20,7 +20,7 @@ function tryDecode(bcd) {
         }
         bcd >>= 4;
     }
-    return nibbles.reduceRight((binary, nibble) => binary * 10 + nibble, 0);
+    return nibbles.reduceRight(function (binary, nibble) { return binary * 10 + nibble; }, 0);
 }
 exports.tryDecode = tryDecode;
 //# sourceMappingURL=decode.js.map
