@@ -18,7 +18,7 @@ function tryDecode(bcd) {
         else {
             return false;
         }
-        bcd >>= 4;
+        bcd >>>= 4;
     }
     return nibbles.reduceRight(function (binary, nibble) { return binary * 10 + nibble; }, 0);
 }

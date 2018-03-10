@@ -21,7 +21,7 @@ export function tryDecode(bcd: number) {
             return false;
         }
 
-        bcd >>= 4;
+        bcd >>>= 4;
     }
 
     return nibbles.reduceRight((binary, nibble) => binary * 10 + nibble, 0);
