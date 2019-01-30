@@ -4,7 +4,7 @@ export function isValid(bcd: number) {
             return false;
         }
 
-        bcd >>= 4;
+        bcd >>>= 4;
     }
 
     return true;

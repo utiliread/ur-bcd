@@ -1,5 +1,5 @@
 export function decode(bcd: number) {
-    let binary = tryDecode(bcd);
+    const binary = tryDecode(bcd);
 
     if (binary === false) {
         throw Error;
@@ -9,7 +9,7 @@ export function decode(bcd: number) {
 }
 
 export function tryDecode(bcd: number) {
-    let nibbles: number[] = [];
+    const nibbles: number[] = [];
 
     while (bcd) {
         let nibble = bcd & 0xf;

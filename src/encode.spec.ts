@@ -7,4 +7,10 @@ describe('encode', () => {
 
         expect(result).to.equal(0x11223344);
     });
+
+    it('should encode to bcd without overflow', () => {
+        const result = encode(99999999);
+
+        expect(result).to.equal(0x99999999);
+    });
 })

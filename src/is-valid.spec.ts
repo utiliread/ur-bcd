@@ -8,6 +8,12 @@ describe('isValid', () => {
         expect(result).to.equal(true);
     });
 
+    it('should return true when valid and not overflow', () => {
+        const result = isValid(0x99999999);
+
+        expect(result).to.equal(true);
+    });
+
     it('should return false when not valid', () => {
         const result = isValid(0x11223a44);
 
